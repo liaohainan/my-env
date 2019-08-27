@@ -1,7 +1,7 @@
 export const isWeex =
   typeof callNative === "function" ||
   (typeof WXEnvironment === "object" && WXEnvironment.platform !== "Web");
-export const isReactNative = typeof __fbBatchedBridgeConfig !== "undefined";
+export const isReactNative = typeof navigator != "undefined" && navigator.product == "ReactNative";
 
 export const isMiniApp =
   typeof wx === "object" && typeof wx.getSystemInfo !== "undefined";
