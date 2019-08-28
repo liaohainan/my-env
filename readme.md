@@ -7,7 +7,7 @@ npm install my-universal-env --save
 ## Usage
 
 ```js
-import { isWeex, isWeb, isMiniApp, isReactNative } from 'universal-env';
+import { isWeex, isWeb, isMiniApp, isReactNative } from 'my-universal-env';
 
 ```
 
