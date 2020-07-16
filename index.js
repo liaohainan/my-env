@@ -1,6 +1,4 @@
-export const isWeex =
-  typeof callNative === "function" ||
-  (typeof WXEnvironment === "object" && WXEnvironment.platform !== "Web");
+export const isWeex = typeof WXEnvironment !== "undefined" && WXEnvironment.platform !== "Web";
 export const isReactNative = typeof navigator != "undefined" && navigator.product == "ReactNative";
 
 export const isMiniApp =
